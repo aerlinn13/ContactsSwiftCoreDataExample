@@ -1,0 +1,6 @@
+framework module Pods_beeContactsTests {
+  umbrella header "Pods-beeContactsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

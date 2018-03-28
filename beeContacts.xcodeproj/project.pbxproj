@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2133038AED7FFE50C3BD1812 /* Pods_beeContacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A485A07F0D61D3E8F6D202 /* Pods_beeContacts.framework */; };
+		57D75CDD734D2A32E98E4BFC /* Pods_beeContactsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4546FA8E855D372542ADE2 /* Pods_beeContactsUITests.framework */; };
+		831872F5206646A500F6145C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831872F4206646A500F6145C /* AppDelegate.swift */; };
+		831872F7206646A500F6145C /* GeneralVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831872F6206646A500F6145C /* GeneralVC.swift */; };
+		831872FA206646A500F6145C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831872F8206646A500F6145C /* Main.storyboard */; };
+		831872FD206646A500F6145C /* beeContacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 831872FB206646A500F6145C /* beeContacts.xcdatamodeld */; };
+		831872FF206646A500F6145C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 831872FE206646A500F6145C /* Assets.xcassets */; };
+		83187302206646A500F6145C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83187300206646A500F6145C /* LaunchScreen.storyboard */; };
+		8318730D206646A500F6145C /* beeContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8318730C206646A500F6145C /* beeContactsTests.swift */; };
+		83187318206646A500F6145C /* beeContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83187317206646A500F6145C /* beeContactsUITests.swift */; };
+		8318732720664C9E00F6145C /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8318732520664C9E00F6145C /* ContactTableViewCell.swift */; };
+		8318732820664C9E00F6145C /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8318732620664C9E00F6145C /* ContactTableViewCell.xib */; };
+		8318732A20664CE600F6145C /* ManageContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8318732920664CE600F6145C /* ManageContactsVC.swift */; };
+		8318732E20664D4F00F6145C /* ManageContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8318732C20664D4F00F6145C /* ManageContactTableViewCell.swift */; };
+		8318732F20664D4F00F6145C /* ManageContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8318732D20664D4F00F6145C /* ManageContactTableViewCell.xib */; };
+		83FD5A792067501B00104695 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8342AE252066B37500A025ED /* data.json */; };
+		83FD5A7B206757D200104695 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FD5A7A206757D200104695 /* Contact.swift */; };
+		83FD5A7D20675F9400104695 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FD5A7C20675F9400104695 /* Protocol.swift */; };
+		FDC3743C24D142A9E62E134E /* Pods_beeContactsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC83E544EBC87367AED42CEA /* Pods_beeContactsTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83187309206646A500F6145C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 831872E9206646A400F6145C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 831872F0206646A400F6145C;
+			remoteInfo = beeContacts;
+		};
+		83187314206646A500F6145C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 831872E9206646A400F6145C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 831872F0206646A400F6145C;
+			remoteInfo = beeContacts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7562917D66152019C1E12407 /* Pods-beeContactsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeContactsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-beeContactsUITests/Pods-beeContactsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8041B39A251F1D124A1AE5AE /* Pods-beeContactsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeContactsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-beeContactsTests/Pods-beeContactsTests.release.xcconfig"; sourceTree = "<group>"; };
+		831872F1206646A400F6145C /* beeContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beeContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		831872F4206646A500F6145C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		831872F6206646A500F6145C /* GeneralVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralVC.swift; sourceTree = "<group>"; };
+		831872F9206646A500F6145C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		831872FC206646A500F6145C /* beeContacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = beeContacts.xcdatamodel; sourceTree = "<group>"; };
+		831872FE206646A500F6145C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83187301206646A500F6145C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83187303206646A500F6145C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83187308206646A500F6145C /* beeContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beeContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8318730C206646A500F6145C /* beeContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beeContactsTests.swift; sourceTree = "<group>"; };
+		8318730E206646A500F6145C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83187313206646A500F6145C /* beeContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beeContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83187317206646A500F6145C /* beeContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beeContactsUITests.swift; sourceTree = "<group>"; };
+		83187319206646A500F6145C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8318732520664C9E00F6145C /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		8318732620664C9E00F6145C /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		8318732920664CE600F6145C /* ManageContactsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageContactsVC.swift; sourceTree = "<group>"; };
+		8318732C20664D4F00F6145C /* ManageContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageContactTableViewCell.swift; sourceTree = "<group>"; };
+		8318732D20664D4F00F6145C /* ManageContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManageContactTableViewCell.xib; sourceTree = "<group>"; };
+		8342AE252066B37500A025ED /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		83FD5A7A206757D200104695 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		83FD5A7C20675F9400104695 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		878187671B5A304521EB2317 /* Pods-beeContacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeContacts.release.xcconfig"; path = "Pods/Target Support Files/Pods-beeContacts/Pods-beeContacts.release.xcconfig"; sourceTree = "<group>"; };
+		A677FDE36BCD5B901B3D870F /* Pods-beeContactsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeContactsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beeContactsUITests/Pods-beeContactsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC83E544EBC87367AED42CEA /* Pods_beeContactsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beeContactsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A485A07F0D61D3E8F6D202 /* Pods_beeContacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beeContacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7CFF1DD44A88A7FC8D44704 /* Pods-beeContactsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeContactsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beeContactsTests/Pods-beeContactsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E896B04DA68917B71DD7561D /* Pods-beeContacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeContacts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beeContacts/Pods-beeContacts.debug.xcconfig"; sourceTree = "<group>"; };
+		FC4546FA8E855D372542ADE2 /* Pods_beeContactsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beeContactsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		831872EE206646A400F6145C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2133038AED7FFE50C3BD1812 /* Pods_beeContacts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83187305206646A500F6145C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC3743C24D142A9E62E134E /* Pods_beeContactsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83187310206646A500F6145C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D75CDD734D2A32E98E4BFC /* Pods_beeContactsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D09CBA8EDC053F80268F5CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E896B04DA68917B71DD7561D /* Pods-beeContacts.debug.xcconfig */,
+				878187671B5A304521EB2317 /* Pods-beeContacts.release.xcconfig */,
+				D7CFF1DD44A88A7FC8D44704 /* Pods-beeContactsTests.debug.xcconfig */,
+				8041B39A251F1D124A1AE5AE /* Pods-beeContactsTests.release.xcconfig */,
+				A677FDE36BCD5B901B3D870F /* Pods-beeContactsUITests.debug.xcconfig */,
+				7562917D66152019C1E12407 /* Pods-beeContactsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		54719B8A7D6710007D396763 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2A485A07F0D61D3E8F6D202 /* Pods_beeContacts.framework */,
+				AC83E544EBC87367AED42CEA /* Pods_beeContactsTests.framework */,
+				FC4546FA8E855D372542ADE2 /* Pods_beeContactsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		831872E8206646A400F6145C = {
+			isa = PBXGroup;
+			children = (
+				8342AE252066B37500A025ED /* data.json */,
+				831872F3206646A400F6145C /* beeContacts */,
+				8318730B206646A500F6145C /* beeContactsTests */,
+				83187316206646A500F6145C /* beeContactsUITests */,
+				831872F2206646A400F6145C /* Products */,
+				4D09CBA8EDC053F80268F5CC /* Pods */,
+				54719B8A7D6710007D396763 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		831872F2206646A400F6145C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				831872F1206646A400F6145C /* beeContacts.app */,
+				83187308206646A500F6145C /* beeContactsTests.xctest */,
+				83187313206646A500F6145C /* beeContactsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		831872F3206646A400F6145C /* beeContacts */ = {
+			isa = PBXGroup;
+			children = (
+				831872F4206646A500F6145C /* AppDelegate.swift */,
+				83FD5A7A206757D200104695 /* Contact.swift */,
+				8318732B20664CF500F6145C /* GeneralVC */,
+				8318733020664D5400F6145C /* ManageContactVC */,
+				831872F8206646A500F6145C /* Main.storyboard */,
+				83187300206646A500F6145C /* LaunchScreen.storyboard */,
+				831872FE206646A500F6145C /* Assets.xcassets */,
+				83187303206646A500F6145C /* Info.plist */,
+				831872FB206646A500F6145C /* beeContacts.xcdatamodeld */,
+				83FD5A7C20675F9400104695 /* Protocol.swift */,
+			);
+			path = beeContacts;
+			sourceTree = "<group>";
+		};
+		8318730B206646A500F6145C /* beeContactsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8318730C206646A500F6145C /* beeContactsTests.swift */,
+				8318730E206646A500F6145C /* Info.plist */,
+			);
+			path = beeContactsTests;
+			sourceTree = "<group>";
+		};
+		83187316206646A500F6145C /* beeContactsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				83187317206646A500F6145C /* beeContactsUITests.swift */,
+				83187319206646A500F6145C /* Info.plist */,
+			);
+			path = beeContactsUITests;
+			sourceTree = "<group>";
+		};
+		8318732B20664CF500F6145C /* GeneralVC */ = {
+			isa = PBXGroup;
+			children = (
+				831872F6206646A500F6145C /* GeneralVC.swift */,
+				8318732520664C9E00F6145C /* ContactTableViewCell.swift */,
+				8318732620664C9E00F6145C /* ContactTableViewCell.xib */,
+			);
+			name = GeneralVC;
+			sourceTree = "<group>";
+		};
+		8318733020664D5400F6145C /* ManageContactVC */ = {
+			isa = PBXGroup;
+			children = (
+				8318732920664CE600F6145C /* ManageContactsVC.swift */,
+				8318732C20664D4F00F6145C /* ManageContactTableViewCell.swift */,
+				8318732D20664D4F00F6145C /* ManageContactTableViewCell.xib */,
+			);
+			name = ManageContactVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		831872F0206646A400F6145C /* beeContacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8318731C206646A500F6145C /* Build configuration list for PBXNativeTarget "beeContacts" */;
+			buildPhases = (
+				9E7F2D6C597A0AFFA6733392 /* [CP] Check Pods Manifest.lock */,
+				831872ED206646A400F6145C /* Sources */,
+				831872EE206646A400F6145C /* Frameworks */,
+				831872EF206646A400F6145C /* Resources */,
+				152B294BF02BD467C098FB37 /* [CP] Embed Pods Frameworks */,
+				400308F6F7C84D1B11FA2C7F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = beeContacts;
+			productName = beeContacts;
+			productReference = 831872F1206646A400F6145C /* beeContacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83187307206646A500F6145C /* beeContactsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8318731F206646A500F6145C /* Build configuration list for PBXNativeTarget "beeContactsTests" */;
+			buildPhases = (
+				4658549CAD70F1B366D811C2 /* [CP] Check Pods Manifest.lock */,
+				83187304206646A500F6145C /* Sources */,
+				83187305206646A500F6145C /* Frameworks */,
+				83187306206646A500F6145C /* Resources */,
+				428A56CD189E9B324161F534 /* [CP] Embed Pods Frameworks */,
+				12B794CEAF78BA243AF9F02B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8318730A206646A500F6145C /* PBXTargetDependency */,
+			);
+			name = beeContactsTests;
+			productName = beeContactsTests;
+			productReference = 83187308206646A500F6145C /* beeContactsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83187312206646A500F6145C /* beeContactsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83187322206646A500F6145C /* Build configuration list for PBXNativeTarget "beeContactsUITests" */;
+			buildPhases = (
+				3A2F84B0D8DA56E4C168C511 /* [CP] Check Pods Manifest.lock */,
+				8318730F206646A500F6145C /* Sources */,
+				83187310206646A500F6145C /* Frameworks */,
+				83187311206646A500F6145C /* Resources */,
+				D138BBBD994C48DCC102A7EA /* [CP] Embed Pods Frameworks */,
+				0B5DE5A184193B188C0065CE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83187315206646A500F6145C /* PBXTargetDependency */,
+			);
+			name = beeContactsUITests;
+			productName = beeContactsUITests;
+			productReference = 83187313206646A500F6145C /* beeContactsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		831872E9206646A400F6145C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Danil;
+				TargetAttributes = {
+					831872F0206646A400F6145C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					83187307206646A500F6145C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 831872F0206646A400F6145C;
+					};
+					83187312206646A500F6145C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 831872F0206646A400F6145C;
+					};
+				};
+			};
+			buildConfigurationList = 831872EC206646A400F6145C /* Build configuration list for PBXProject "beeContacts" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 831872E8206646A400F6145C;
+			productRefGroup = 831872F2206646A400F6145C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				831872F0206646A400F6145C /* beeContacts */,
+				83187307206646A500F6145C /* beeContactsTests */,
+				83187312206646A500F6145C /* beeContactsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		831872EF206646A400F6145C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FD5A792067501B00104695 /* data.json in Resources */,
+				8318732820664C9E00F6145C /* ContactTableViewCell.xib in Resources */,
+				8318732F20664D4F00F6145C /* ManageContactTableViewCell.xib in Resources */,
+				83187302206646A500F6145C /* LaunchScreen.storyboard in Resources */,
+				831872FF206646A500F6145C /* Assets.xcassets in Resources */,
+				831872FA206646A500F6145C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83187306206646A500F6145C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83187311206646A500F6145C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B5DE5A184193B188C0065CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-beeContactsUITests/Pods-beeContactsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12B794CEAF78BA243AF9F02B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-beeContactsTests/Pods-beeContactsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		152B294BF02BD467C098FB37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-beeContacts/Pods-beeContacts-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-beeContacts/Pods-beeContacts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A2F84B0D8DA56E4C168C511 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-beeContactsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		400308F6F7C84D1B11FA2C7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-beeContacts/Pods-beeContacts-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		428A56CD189E9B324161F534 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-beeContactsTests/Pods-beeContactsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4658549CAD70F1B366D811C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-beeContactsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E7F2D6C597A0AFFA6733392 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-beeContacts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D138BBBD994C48DCC102A7EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-beeContactsUITests/Pods-beeContactsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		831872ED206646A400F6145C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8318732720664C9E00F6145C /* ContactTableViewCell.swift in Sources */,
+				831872F7206646A500F6145C /* GeneralVC.swift in Sources */,
+				8318732E20664D4F00F6145C /* ManageContactTableViewCell.swift in Sources */,
+				8318732A20664CE600F6145C /* ManageContactsVC.swift in Sources */,
+				831872FD206646A500F6145C /* beeContacts.xcdatamodeld in Sources */,
+				83FD5A7D20675F9400104695 /* Protocol.swift in Sources */,
+				831872F5206646A500F6145C /* AppDelegate.swift in Sources */,
+				83FD5A7B206757D200104695 /* Contact.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83187304206646A500F6145C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8318730D206646A500F6145C /* beeContactsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8318730F206646A500F6145C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83187318206646A500F6145C /* beeContactsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8318730A206646A500F6145C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 831872F0206646A400F6145C /* beeContacts */;
+			targetProxy = 83187309206646A500F6145C /* PBXContainerItemProxy */;
+		};
+		83187315206646A500F6145C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 831872F0206646A400F6145C /* beeContacts */;
+			targetProxy = 83187314206646A500F6145C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		831872F8206646A500F6145C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				831872F9206646A500F6145C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83187300206646A500F6145C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83187301206646A500F6145C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8318731A206646A500F6145C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8318731B206646A500F6145C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8318731D206646A500F6145C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E896B04DA68917B71DD7561D /* Pods-beeContacts.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FVB4M6K923;
+				INFOPLIST_FILE = beeContacts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aerlindir.beeContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8318731E206646A500F6145C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 878187671B5A304521EB2317 /* Pods-beeContacts.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FVB4M6K923;
+				INFOPLIST_FILE = beeContacts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aerlindir.beeContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83187320206646A500F6145C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7CFF1DD44A88A7FC8D44704 /* Pods-beeContactsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FVB4M6K923;
+				INFOPLIST_FILE = beeContactsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aerlindir.beeContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/beeContacts.app/beeContacts";
+			};
+			name = Debug;
+		};
+		83187321206646A500F6145C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8041B39A251F1D124A1AE5AE /* Pods-beeContactsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FVB4M6K923;
+				INFOPLIST_FILE = beeContactsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aerlindir.beeContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/beeContacts.app/beeContacts";
+			};
+			name = Release;
+		};
+		83187323206646A500F6145C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A677FDE36BCD5B901B3D870F /* Pods-beeContactsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FVB4M6K923;
+				INFOPLIST_FILE = beeContactsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aerlindir.beeContactsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = beeContacts;
+			};
+			name = Debug;
+		};
+		83187324206646A500F6145C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7562917D66152019C1E12407 /* Pods-beeContactsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FVB4M6K923;
+				INFOPLIST_FILE = beeContactsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aerlindir.beeContactsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = beeContacts;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		831872EC206646A400F6145C /* Build configuration list for PBXProject "beeContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8318731A206646A500F6145C /* Debug */,
+				8318731B206646A500F6145C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8318731C206646A500F6145C /* Build configuration list for PBXNativeTarget "beeContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8318731D206646A500F6145C /* Debug */,
+				8318731E206646A500F6145C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8318731F206646A500F6145C /* Build configuration list for PBXNativeTarget "beeContactsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83187320206646A500F6145C /* Debug */,
+				83187321206646A500F6145C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83187322206646A500F6145C /* Build configuration list for PBXNativeTarget "beeContactsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83187323206646A500F6145C /* Debug */,
+				83187324206646A500F6145C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		831872FB206646A500F6145C /* beeContacts.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				831872FC206646A500F6145C /* beeContacts.xcdatamodel */,
+			);
+			currentVersion = 831872FC206646A500F6145C /* beeContacts.xcdatamodel */;
+			path = beeContacts.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 831872E9206646A400F6145C /* Project object */;
+}
